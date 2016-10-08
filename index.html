@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sid's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+  <body>
+
+    <header>
+      <section class="logo">
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24">
+        <title>Responsive logo</title>
+        <path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path>
+        </svg>
+      </section>
+      <section class="bio">
+        <h1>Sid Singh</h1>
+        <h4>Front-end Ninja</h4>
+      </section>
+    </header>
+
+<!--Hero image ideas borrowed from https://cloudfour.com/thinks/responsive-hero-images/ -->
+<!-- Using different images for different viewport categories because why not! -->
+    <section class="hero">
+      <picture>
+      <source media="(min-width: 781px)" srcset="images/1080x360.jpeg">
+      <source media="(min-width: 541px)" srcset="images/780x320.jpeg">
+      <source media="(max-width: 540px)" srcset="images/540x270.jpeg">
+      <img src="images/320x200.jpeg" alt="fancy banner image">
+      </picture>
+    </section>
+
+    <h2>Featured Work</h2>
+
+    <main>
+      <article>
+        <img src="images/230x200.jpeg">
+        <h3>Appify</h3>
+        <p>https://github.com/udacity/Appify</p>
+      </article>
+      <article>
+        <img src="images/230x200.jpeg">
+        <h3>Sunflower</h3>
+        <p>https://github.com/udacity/Sunflower</p>
+      </article>
+      <article>
+        <img src="images/230x200.jpeg">
+        <h3>Bokeh</h3>
+        <p>https://github.com/udacity/Bokeh</p>
+      </article>
+    </main>
+  </body>
+</html>
